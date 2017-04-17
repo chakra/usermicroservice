@@ -15,9 +15,6 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-/**
- * @author Roland Krüger
- */
 @Entity
 public class Authority implements GrantedAuthority {
     private Long id;

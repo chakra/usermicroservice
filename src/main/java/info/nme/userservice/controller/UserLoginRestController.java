@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 
-/**
- * @author Roland Krüger
- */
 @RestController
 @RequestMapping("/" + RestApiConstants.LOGIN_USER_RESOURCE)
 public class UserLoginRestController {

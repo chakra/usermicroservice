@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import javax.ws.rs.NotFoundException;
 
-/**
- * @author Roland Krüger
- */
+
 @ControllerAdvice
 public class GlobalControllerExceptionHandler {
 

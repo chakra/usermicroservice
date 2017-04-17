@@ -5,9 +5,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.stereotype.Component;
 
-/**
- * @author Roland Krüger
- */
 @EnableWebSecurity
 @Component
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {

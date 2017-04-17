@@ -20,9 +20,7 @@ import static com.google.common.base.MoreObjects.firstNonNull;
 import static com.google.common.base.Strings.isNullOrEmpty;
 import static org.springframework.http.HttpStatus.OK;
 
-/**
- * @author Roland Krüger
- */
+
 @RestController
 @ExposesResourceFor(User.class)
 @RequestMapping("/" + RestApiConstants.UPDATE_USER_RESOURCE)

@@ -16,9 +16,6 @@ import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author Roland Krüger
- */
 @Component
 @Profile("DEV")
 public class DevelopmentProfileConfiguration implements ApplicationListener<ContextRefreshedEvent> {

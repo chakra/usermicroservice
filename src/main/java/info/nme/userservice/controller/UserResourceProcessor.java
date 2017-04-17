@@ -7,9 +7,6 @@ import org.springframework.hateoas.ResourceProcessor;
 import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 import org.springframework.stereotype.Component;
 
-/**
- * @author Roland Krüger
- */
 @Component
 public class UserResourceProcessor implements ResourceProcessor<Resource<User>> {
     @Override

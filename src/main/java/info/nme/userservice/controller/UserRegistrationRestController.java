@@ -15,9 +15,6 @@ import org.springframework.web.bind.annotation.*;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 
-/**
- * @author Roland Krüger
- */
 @RestController
 @ExposesResourceFor(UserRegistrationResource.class)
 @RequestMapping("/" + RestApiConstants.REGISTRATIONS_RESOURCE)
