@@ -2,8 +2,6 @@ package info.nme.userservice.api.model;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.collect.Lists;
-import info.nme.userservice.api._internal.model.AbstractBaseApiData;
-import info.nme.userservice.api.resources.UserResource;
 import org.springframework.hateoas.Link;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -17,7 +15,7 @@ import java.util.List;
  *
  * @author Roland Krüger
  */
-public class UserApiData extends AbstractBaseApiData<UserResource> implements UserDetails {
+public class UserApiData implements UserDetails {
     private String username;
     private String password;
     private String email;
@@ -137,8 +135,4 @@ public class UserApiData extends AbstractBaseApiData<UserResource> implements Us
                 .toString();
     }
 
-    @Override
-    protected UserResource createNewResource(Link self) {
-        return new UserResource(self, this);
-    }
 }

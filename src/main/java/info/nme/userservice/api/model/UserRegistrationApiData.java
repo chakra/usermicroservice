@@ -1,9 +1,6 @@
 package info.nme.userservice.api.model;
 
 import com.google.common.base.MoreObjects;
-import info.nme.userservice.api.resources.UserRegistrationsResource;
-import info.nme.userservice.api._internal.model.AbstractBaseApiData;
-import org.springframework.hateoas.Link;
 
 /**
  * Client-side representation of a pending (non-confirmed) user registration. Such a user registration object can be
@@ -12,7 +9,7 @@ import org.springframework.hateoas.Link;
  *
  * @author Roland Krüger
  */
-public class UserRegistrationApiData extends AbstractBaseApiData<UserRegistrationsResource> {
+public class UserRegistrationApiData {
     private String username;
     private String password;
     private String email;
@@ -48,11 +45,6 @@ public class UserRegistrationApiData extends AbstractBaseApiData<UserRegistratio
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    @Override
-    protected UserRegistrationsResource createNewResource(Link self) {
-        return new UserRegistrationsResource(self);
     }
 
     @Override

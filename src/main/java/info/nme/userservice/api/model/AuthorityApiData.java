@@ -1,9 +1,6 @@
 package info.nme.userservice.api.model;
 
 import com.google.common.base.MoreObjects;
-import info.nme.userservice.api.resources.AuthorityResource;
-import info.nme.userservice.api._internal.model.AbstractBaseApiData;
-import org.springframework.hateoas.Link;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.time.LocalDateTime;
@@ -14,7 +11,7 @@ import java.time.LocalDateTime;
  *
  * @author Roland Krüger
  */
-public class AuthorityApiData extends AbstractBaseApiData<AuthorityResource> implements GrantedAuthority {
+public class AuthorityApiData implements GrantedAuthority {
     private Long version;
     private LocalDateTime lastModified;
     private String authority;
@@ -74,8 +71,4 @@ public class AuthorityApiData extends AbstractBaseApiData<AuthorityResource> imp
                 .toString();
     }
 
-    @Override
-    protected AuthorityResource createNewResource(Link self) {
-        return new AuthorityResource(self, this);
-    }
 }
